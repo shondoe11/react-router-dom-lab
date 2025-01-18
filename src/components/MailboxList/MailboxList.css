@@ -1,0 +1,26 @@
+/* From the user stories: “Each mailbox in the list should be a square container with a box number _id.” We’ve included a CSS class called .mail-box,
+where should you place it? */
+
+.mail-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 16px;
+}
+
+.mail-box {
+    width: 100px;
+    height: 100px;
+    background-color: #100c27;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #ccc;
+    font-weight: bold;
+}
+
+.mail-box:hover {
+    transform: scale(1.2);
+    background-color: #aefff0;
+    border-color: #ffbe0b;
+}
